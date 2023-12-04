@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(pics/globe7.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 0 10%;
+    position: relative;
+}
+.logo{
+    width: 100px;
+    padding: 10px 0%;
+    cursor: pointer;
+}
+.content{
+    margin: 0px;
+    padding: 0%;
+    top: 50%;
+    position: absolute;
+    text-align: center;
+    transform: translateY(-50%);
+    color: rgb(255, 255, 255);
+    }
+.content h1{
+    font-size: 45px;
+    font-weight: 600 bolder;
+    font-style:inherit;
+}
+.content button{
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    padding: 12px 25px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.content  button:hover{
+    transition: .5s;
+    border-color: red ;
+    color: yellow;
+    backdrop-filter: blur(3px);
+}
+.Ending-time{
+    display: flex;
+}
+.Ending-time div{
+    padding: 10%;
+    flex-basis: 10000px;
+}
+.Ending-time div p{
+    font-size: 100px;
+    position: initial;
+    margin-bottom: -14px;
+}
+.burning{
+    width: 90px;
+    position: absolute;
+    right: 10%;
+    bottom: 0;
+    animation: burning 6s linear infinite;
+}
+@keyframes burning{
+    0%{
+        bottom: 0;
+        opacity: 0.1;
+    }
+    100%{
+        bottom: 105%;
+        opacity: 1.5;
+    }
+}
+.burning2{
+    width: 90px;
+    position: absolute;
+    left: 10%;
+    bottom: 0;
+    animation: burning 6s linear infinite;
+}
+
+

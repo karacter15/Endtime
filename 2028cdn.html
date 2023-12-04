@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>countdown page - 2028 ENDTIME</title>
+    <link rel="stylesheet" href="2028cdn.css">
+</head>
+<body>
+    <div class="container">
+        <img src="pics/logo1.jpeg" class="logo"><br><h1 style="color: white; font-size: small;">
+        <div class="content">
+            <h1>We're heading to <span style="color:rgb(180, 12, 12);">Millennium</span></h1>
+            <div class="Ending-time">
+                <div>
+                    <p id="days"></p>
+                    <span>Days</span>
+                </div>
+                <div>
+                    <p id="hours">00</p>
+                    <span>Hours</span>
+                </div>
+                <div>
+                    <p id="minutes">00</p>
+                    <span>Munites</span>
+                </div>
+                <div>
+                    <p id="seconds">00</p>
+                    <span>Seconds</span>
+                </div>
+                
+            </div>
+            <br>
+            <h2 style="text-align: center;">WE HAVE LESS THAN 5 YEARS MORE  <span style="color: red;">!!! BELIEVE OR NOT</span></h2>
+            <button>Learn more</button>
+        </div>
+        <img src="pics/odansefo.jpg" class="burning">
+    </div>
+
+<script>
+    var countDownDate = new Date("dec 31, 2027 00:00:00").getTime();
+    var x = setInterval(function(){
+        var now = new Date().getTime();
+        var distance = countDownDate - now;
+
+        var days = Math.floor(distance / (1000 * 60 * 60 *24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 *24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        document.getElementById("days").innerHTML = days;
+        document.getElementById("hours").innerHTML = hours;
+        document.getElementById("minutes").innerHTML = minutes;
+        document.getElementById("seconds").innerHTML = seconds;
+
+
+    },1000);
+
+
+</script>
+
+</body>
+</html>
